@@ -1,0 +1,300 @@
+$color-texto: #1f2021;
+$color-texto-hover: #00574a;
+$transition-background: background-color 0.3s ease;
+$transition-color: color 0.3s ease;
+
+@font-face {
+    font-family: "SoDoSans-Light";
+    src: url(../assets/fonts/SoDoSans-Light.ttf);
+}
+
+@font-face {
+    font-family: "SoDoSans-Regular";
+    src: url(../assets/fonts/SoDoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "SoDoSans-SemiBold";
+    src: url(../assets/fonts/SoDoSans-SemiBold.ttf);
+}
+
+button:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+* {
+    font-family: "SoDoSans-Regular";
+}
+
+.ls-1px {
+    letter-spacing: 1px;
+}
+
+.boxshadow-bottom {
+    box-shadow:
+        0 1px 3px rgb(0, 0, 0, 0.1),
+        0 2px 2px rgb(0, 0, 0, 0.06),
+        0 0px 2px rgb(0, 0, 0, 0.07);
+}
+
+.navbar-brand {
+    img {
+        width: 50px;
+        height: auto;
+        margin-right: 10px;
+    }
+}
+
+.p-2 {
+    padding: 2rem !important;
+}
+
+.ff-SoDoSans-SemiBold {
+    font-family: "SoDoSans-SemiBold" !important;
+}
+
+.ff-SoDoSans-Regular {
+    font-family: "SoDoSans-Regular" !important;
+}
+
+.ff-SoDoSans-Light {
+    font-family: "SoDoSans-Light" !important;
+}
+
+
+.fs-90 {
+    font-size: .90rem !important;
+}
+
+.fs-1-2 {
+    font-size: 1.2rem !important;
+}
+
+.fs-1-3 {
+    font-size: 1.3rem !important;
+}
+
+.fs-1-5 {
+    font-size: 1.5rem !important;
+}
+
+.fs-1-6 {
+    font-size: 1.6rem !important;
+}
+
+
+.fs-3rem {
+    font-size: 3rem !important;
+    letter-spacing: 2px !important;
+}
+
+.mt-2-1 {
+    margin-top: 2.1rem;
+}
+
+.mb-2-1 {
+    margin-bottom: 2.1rem;
+}
+
+.lh-1-7 {
+    line-height: 1.7;
+}
+
+.nav-link-sb {
+
+    text-decoration: none;
+    transition: $transition-color;
+
+    ion-icon {
+        font-size: 1.4rem;
+        color: $color-texto;
+        margin-right: 5px;
+
+    }
+
+    span {
+        color: #1f2021;
+    }
+}
+
+.nav-link-sb:hover {
+
+    ion-icon {
+
+        color: $color-texto-hover;
+
+    }
+
+    span {
+        color: $color-texto-hover;
+    }
+
+}
+
+.btn-white {
+    border: 1px solid #000;
+    border-radius: 2rem;
+    padding: 3px 18px;
+    font-size: .9rem;
+    background: #fff;
+    transition: $transition-background;
+}
+
+.btn-white:hover {
+
+    background: #f1f1f1;
+}
+
+.btn-dark {
+    border: 1px solid #000;
+    border-radius: 2rem;
+    padding: 3px 18px;
+    font-size: .9rem;
+    background: #000000;
+    color: #fff;
+    transition: $transition-background;
+
+}
+
+.btn-dark:hover {
+
+    background: #141414;
+}
+
+.text-green-hover:hover {
+    color: $color-texto-hover !important;
+}
+
+.card-sb {
+    padding: 3rem;
+}
+
+.bg-hero-1 {
+    height: 556px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-hero-2 {
+    width: auto;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.max-w-450 {
+    max-width: 445px;
+}
+
+.max-w-460 {
+    max-width: 460px;
+}
+
+
+@media (max-width: 768px) {
+    .bg-hero-1 {
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .bg-hero-2 {
+        min-height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .img-hero-2 {
+
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+
+    }
+
+}
+
+@media (min-width: 1920px) {
+    main {
+        max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+
+.btn-sb-1 {
+    text-decoration: none;
+    padding: 7px 16px;
+    border: 1px solid #ffffff;
+    border-radius: 2rem;
+    transition: $transition-background;
+}
+
+.btn-sb-1:hover {
+    background: rgba(12, 12, 12, 0.3);
+}
+
+.btn-sb-2 {
+    text-decoration: none;
+    padding: 7px 16px;
+    border: 1px solid #ffffff;
+    border-radius: 2rem;
+    transition: $transition-background;
+}
+
+.btn-sb-2:hover {
+    background: rgba(12, 12, 12, 0.3);
+}
+
+.img-hero-2 {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.link-social {
+    padding: 5px;
+    background: #212121;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+    ion-icon {
+        color: #fff;
+        font-size: 1.3rem;
+        margin-top: 6px;
+    }
+}
+
+.text-muted-hover{
+   transition: $transition-color !important;
+}
+.text-muted-hover:hover{
+    color: #060606 !important;
+}
+
+.img-product{
+width: 150px;
+height: 150px;
+border-radius: 50%;
+
+}
+
+.sub-bar{
+    background: #f9f9f9;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+@media (min-width: 700px) {
+    .ps-6 {
+      margin-left: 5.4rem;
+    }
+  }
